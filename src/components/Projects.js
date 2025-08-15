@@ -48,7 +48,7 @@ export default function Projects() {
     : data.filter((item) => item.category === filter);
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 dark:bg-gray-800/50">
+    <section id="projects" className="section-padding bg-gray-50 ">
       <div className="container-custom">
         {/* Heading */}
         <div className="text-center mb-16">
@@ -64,7 +64,7 @@ export default function Projects() {
               className={`px-6 py-2 rounded-full transition ${
                 filter === cat.id
                   ? 'bg-primary-600 text-white'
-                  : 'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300'
+                  : 'bg-white'
               }`}
               style={{ animationDelay: `${idx * 0.1}s` }}
             >
@@ -103,12 +103,12 @@ export default function Projects() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">{proj.desc}</p>
+                <p className="text-gray-600 ">{proj.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {proj.tech.map((t, ti) => (
                     <span
                       key={ti}
-                      className="px-2 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs rounded"
+                      className="px-2 py-1 bg-primary-100 "
                     >
                       {t}
                     </span>

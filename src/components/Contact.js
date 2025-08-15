@@ -26,7 +26,7 @@ export default function Contact() {
   const getText={'idle':'Send Message','sending':'Sending...','sent':'Message Sent!'}[status];
 
   return (
-    <section id="contact" className="section-padding bg-gray-50 dark:bg-gray-800/50">
+    <section id="contact" className="section-padding bg-gray-50 ">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 animate-fadeInUp">Contact Me</h2>
@@ -34,11 +34,11 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="animate-fadeInLeft space-y-6">
             {info.map((i,idx)=>(
-              <a key={idx} href={i.link} className="flex items-center p-4 bg-white dark:bg-gray-800 rounded-lg shadow-sm hover:shadow-md transition">
+              <a key={idx} href={i.link} className="flex items-center p-4 bg-white ">
                 <i.icon className="w-12 h-12 bg-primary-100 text-primary-600 p-3 rounded-lg mr-4"/>
                 <div>
                   <div className="font-medium">{i.label}</div>
-                  <div className="text-gray-600 dark:text-gray-300 text-sm">{i.value}</div>
+                  <div className="text-gray-600 ">{i.value}</div>
                 </div>
               </a>
             ))}
@@ -46,8 +46,8 @@ export default function Contact() {
               <h4 className="font-semibold mb-4">Connect</h4>
               <div className="flex space-x-4">
                 {socials.map((s,i)=>(
-                  <a key={i} href={s.url} className="w-12 h-12 bg-white dark:bg-gray-800 rounded-lg flex items-center justify-center shadow-sm hover:shadow-md transition">
-                    <s.icon className="w-6 h-6 text-gray-600 dark:text-gray-400"/>
+                  <a key={i} href={s.url} className="w-12 h-12 bg-white ">
+                    <s.icon className="w-6 h-6 text-gray-600 "/>
                   </a>
                 ))}
               </div>

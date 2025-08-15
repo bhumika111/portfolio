@@ -5,11 +5,8 @@
 .App {
   @apply min-h-screen transition-all;
 }
-.dark .App {
-  @apply bg-gray-900 text-gray-100;
-}
 ::-webkit-scrollbar { width:8px; }
-::-webkit-scrollbar-track { @apply bg-gray-200 dark:bg-gray-700; }
+::-webkit-scrollbar-track { @apply bg-gray-200; }
 ::-webkit-scrollbar-thumb { @apply bg-primary-500 rounded; }
 @keyframes fadeInUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
 .animate-fadeInUp { animation:fadeInUp 0.8s ease-out; }

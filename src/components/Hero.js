@@ -21,20 +21,20 @@ export default function Hero() {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-purple-50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-purple-50 d"></div>
       <div className="container-custom relative z-10 text-center animate-fadeInUp">
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-600 p-1">
-            <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
-              <span className="text-4xl font-bold text-gray-600 dark:text-gray-300">BR</span>
+            <div className="w-full h-full rounded-full bg-gray-200 ">
+              <span className="text-4xl font-bold text-gray-600 ">BR</span>
             </div>
           </div>
         </div>
         <h1 className="text-5xl font-bold mb-6">Hi, I’m <span className="gradient-text">Bhumika Ramawat</span></h1>
-        <p className="text-2xl text-gray-600 dark:text-gray-300 mb-2">
-          I’m a <span className="text-primary-600 dark:text-primary-400">{text}</span><span className="animate-pulse">|</span>
+        <p className="text-2xl text-gray-600 ">
+          I’m a <span className="text-primary-600 ">{text}</span><span className="animate-pulse">|</span>
         </p>
-        <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-8">
+        <p className="text-lg text-gray-500 ">
           CSE student skilled in React.js, Node.js, and full-stack development.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
@@ -50,7 +50,7 @@ export default function Hero() {
           <a href="https://www.linkedin.com/in/bhumika-ramawat-999b70274/" className="social-icon"><FiLinkedin/></a>
           <a href="mailto:bhumikaramawat111@gmail.com" className="social-icon"><FiMail/></a>
         </div>
-        <button onClick={()=>document.getElementById('about').scrollIntoView({behavior:'smooth'})} className="animate-bounce text-gray-500 dark:text-gray-400">
+        <button onClick={()=>document.getElementById('about').scrollIntoView({behavior:'smooth'})} className="animate-bounce text-gray-500 ">
           <FiArrowDown size={24}/>
         </button>
       </div>

@@ -10,11 +10,11 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="section-padding bg-gray-50 dark:bg-gray-800/50">
+    <section id="about" className="section-padding bg-gray-50">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 animate-fadeInUp">About Me</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto animate-fadeInUp">
+          <p className="text-lg text-gray-600 ">
             I’m a CSE student at JECRC University (2023–2027) with a CGPA of 8.24/10, specializing in full-stack development.
           </p>
         </div>
@@ -23,7 +23,7 @@ export default function About() {
             <img src="/profile.jpg" alt="Bhumika Ramawat" className="rounded-2xl shadow-lg mx-auto w-full max-w-sm"/>
           </div>
           <div className="space-y-6 animate-fadeInRight">
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-gray-600 ">
               As a passionate developer, I’ve built projects like TextUtils, NewsMonkey, and YourPlaces, leveraging modern web technologies to deliver performant, user-friendly applications.
             </p>
             <div className="grid grid-cols-2 gap-4 text-sm mb-6">
@@ -42,11 +42,11 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {highlights.map((h,i)=>(
               <div key={i} className="card p-6 text-center animate-fadeInUp" style={{animationDelay:`${i*0.1}s`}}>
-                <div className="w-16 h-16 mx-auto mb-4 bg-primary-100 dark:bg-primary-900/30 rounded-full flex items-center justify-center">
-                  <h.icon className="w-8 h-8 text-primary-600 dark:text-primary-400"/>
+                <div className="w-16 h-16 mx-auto mb-4 bg-primary-100 ">
+                  <h.icon className="w-8 h-8 text-primary-600 "/>
                 </div>
                 <h4 className="text-xl font-semibold mb-3">{h.title}</h4>
-                <p className="text-gray-600 dark:text-gray-300 text-sm">{h.description}</p>
+                <p className="text-gray-600 ">{h.description}</p>
               </div>
             ))}
           </div>

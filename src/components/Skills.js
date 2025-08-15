@@ -39,7 +39,7 @@ export default function Projects() {
   const filtered = filter==='all'?data:data.filter(d=>d.category===filter);
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 dark:bg-gray-800/50">
+    <section id="projects" className="section-padding bg-gray-50 ">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 animate-fadeInUp">Projects</h2>
@@ -48,7 +48,7 @@ export default function Projects() {
         <div className="flex flex-wrap justify-center gap-4 mb-12">
           {cats.map(c=>(
             <button key={c.id} onClick={()=>setFilter(c.id)}
-              className={`px-6 py-2 rounded-full transition ${filter===c.id?'bg-primary-600 text-white':'bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300'}`}>
+              className={`px-6 py-2 rounded-full transition ${filter===c.id?'bg-primary-600 text-white':'bg-white '}`}>
               <FiFilter className="inline mr-1"/>{c.name}
             </button>
           ))}
@@ -68,9 +68,9 @@ export default function Projects() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{p.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">{p.desc}</p>
+                <p className="text-gray-600 ">{p.desc}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
-                  {p.tech.map((t,i)=><span key={i} className="px-2 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 text-xs rounded">{t}</span>)}
+                  {p.tech.map((t,i)=><span key={i} className="px-2 py-1 bg-primary-100 ">{t}</span>)}
                 </div>
                 <div className="flex justify-between">
                   <a href={p.demo} className="text-primary-600 hover:underline flex items-center"><FiEye className="mr-1"/> Demo</a>

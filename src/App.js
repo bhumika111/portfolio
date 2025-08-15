@@ -10,7 +10,6 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
@@ -31,8 +30,8 @@ function App() {
   }, []);
 
   return (
-    <div className={`App ${darkMode?'dark':''}`}>
-      <Navbar darkMode={darkMode} toggleDarkMode={()=>setDarkMode(!darkMode)} activeSection={activeSection}/>
+    <div className="App">
+      <Navbar activeSection={activeSection}/>
       <main>
         <Hero/>
         <About/>
