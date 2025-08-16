@@ -38,7 +38,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold mb-4">Contact</h4>
           <p><a href="mailto:bhumikaramawat111@gmail.com" className="hover:text-primary-400 transition">bhumikaramawat111@gmail.com</a></p>
-          <p><a href="tel:+916375496192" className="hover:text-primary-400 transition">6375496192</a></p>
+          <p><a href="tel:+916375496192" className="hover:text-primary-400 transition">+91-6375496192</a></p>
         </div>
       </div>
       <div className="border-t border-gray-800 py-6">
