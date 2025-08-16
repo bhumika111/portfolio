@@ -41,10 +41,11 @@ export default function About() {
           <h3 className="text-3xl font-bold text-center mb-8 animate-fadeInUp">What I Do</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {highlights.map((h,i)=>(
-              <div key={i} className="card p-6 text-center animate-fadeInUp" style={{animationDelay:`${i*0.1}s`}}>
-                <div className="w-16 h-16 mx-auto mb-4 bg-primary-100 ">
-                  <h.icon className="w-8 h-8 text-primary-600 "/>
-                </div>
+             <div key={i} className="card p-6 text-center flex flex-col items-center animate-fadeInUp" style={{animationDelay:`${i*0.1}s`}}>
+               <div className="w-16 h-16 mx-auto mb-4 bg-primary-100 rounded-full flex items-center justify-center">
+  <h.icon className="w-8 h-8 text-primary-600"/>
+</div>
+
                 <h4 className="text-xl font-semibold mb-3">{h.title}</h4>
                 <p className="text-gray-600 ">{h.description}</p>
               </div>

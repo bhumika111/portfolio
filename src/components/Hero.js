@@ -24,11 +24,13 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-purple-50 d"></div>
       <div className="container-custom relative z-10 text-center animate-fadeInUp">
         <div className="mb-8">
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-600 p-1">
-            <div className="w-full h-full rounded-full bg-gray-200 ">
-              <span className="text-4xl font-bold text-gray-600 ">BR</span>
-            </div>
-          </div>
+       <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-600 p-1 flex items-center justify-center">
+  <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
+    <span className="text-4xl font-bold text-gray-600">BR</span>
+  </div>
+</div>
+
+
         </div>
         <h1 className="text-5xl font-bold mb-6">Hi, I’m <span className="gradient-text">Bhumika Ramawat</span></h1>
         <p className="text-2xl text-gray-600 ">
