@@ -8,34 +8,55 @@ export default function Projects() {
   const [hovered, setHovered] = useState(null);
 
   const data = [
-    {
-      id: 1,
-      title: 'TextUtils',
-      category: 'frontend',
-      demo: '#',
-      code: 'https://github.com/bhumika111/TextUtils',
-      desc: 'React-based text utilities app with case conversion, counts, and TTS integration.',
-      tech: ['React', 'Web Speech API', 'CSS3'],
-    },
-    {
-      id: 2,
-      title: 'NewsMonkey',
-      category: 'frontend',
-      demo: '#',
-      code: 'https://github.com/bhumika111/NewsMonkey',
-      desc: 'Real-time news app with category routing, lazy loading, and caching strategies.',
-      tech: ['React', 'NewsAPI', 'Lazy Loading'],
-    },
-    {
-      id: 3,
-      title: 'YourPlaces',
-      category: 'fullstack',
-      demo: '#',
-      code: 'https://github.com/bhumika111/yourPlaces',
-      desc: 'Full-stack location management with Node.js/Express backend and responsive frontend.',
-      tech: ['Node.js', 'Express', 'React'],
-    },
-  ];
+  {
+    id: 1,
+    title: "WhatsApp Email Server",
+    category: "fullstack",
+    demo: "#",
+    code: "https://github.com/bhumika111",
+    desc: "Built a Node.js server integrating IMAP email monitoring and Twilio messaging for real-time WhatsApp notifications.",
+    tech: ["Node.js", "Twilio", "IMAP", "Express"]
+  },
+
+  {
+    id: 2,
+    title: "NewsMonkey",
+    category: "frontend",
+    demo: "#",
+    code: "https://github.com/bhumika111",
+    desc: "Real-time news platform with category-based navigation, pagination and reusable React components.",
+    tech: ["React", "News API", "Bootstrap"]
+  },
+
+  {
+    id: 3,
+    title: "Sorting Visualizer",
+    category: "frontend",
+    demo: "#",
+    code: "https://github.com/bhumika111/sorting-visualizer",
+    desc: "Interactive visualization of Bubble Sort, Merge Sort and Quick Sort using responsive animations.",
+    tech: ["JavaScript", "HTML", "CSS"]
+  },
+
+  {
+    id: 4,
+    title: "TextUtils",
+    category: "frontend",
+    demo: "#",
+    code: "https://github.com/bhumika111",
+    desc: "Text utility application providing text analysis, transformation and formatting features.",
+    tech: ["React", "JavaScript", "Bootstrap"]
+  },
+  {
+  id: 5,
+  title: "YourPlaces",
+  category: "fullstack",
+  demo: "#",
+  code: "https://github.com/bhumika111",
+  desc: "Full-stack location sharing platform with authentication, image uploads and MongoDB integration.",
+  tech: ["React", "Node.js", "MongoDB", "Express"]
+}
+];
 
   const categories = [
     { id: 'all', name: 'All' },

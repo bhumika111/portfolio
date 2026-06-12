@@ -3,28 +3,26 @@ import { FiBriefcase, FiCalendar, FiMapPin, FiAward } from 'react-icons/fi';
 
 export default function Experience() {
   const work = [
-    {
-      id:1,
-      title:'Product & Tech Analyst',
-      company:'BookWorm',
-      location:'Remote',
-      duration:'Mar 2024–Jun 2024',
-      type:'Contract',
-      desc:'Developed book rental/marketplace platform; managed 500+ book inventory.',
-      ach:['Onboarded 30+ users in week 1','Improved load times by 40%'],
-      tech:['React','Node.js','MongoDB']
-    },
-    {
-      id:2,
-      title:'Media Sector Manager',
-      company:'RHYTHM',
-      location:'On-site',
-      duration:'Feb 2025–Mar 2025',
-      type:'Contract',
-      desc:'Led media strategy for tech fest; secured coverage on 5+ digital platforms.',
-      ach:['Boosted event visibility by 200%','Coordinated logistics & live presentations'],
-      tech:['Project Management','Media Relations']
-    }
+   {
+  id:1,
+  title:'Media Sector Manager',
+  company:'RHYTHM',
+  location:'On-site',
+  duration:'Feb 2025–Mar 2025',
+  type:'Leadership',
+  desc:'Led a team of volunteers, overseeing participant coordination, guest engagement, and judge liaison to ensure smooth event operations.',
+  ach:[
+    'Managed logistics and communication to ensure all tasks were completed on time',
+    'Conducted interviews with bloggers and press to secure event coverage',
+    'Served as primary speaker announcing results and boosting event visibility'
+  ],
+  tech:[
+    'Project Management',
+    'Media Relations',
+    'Team Leadership',
+    'Communication'
+  ]
+}
   ];
   return (
     <section id="experience" className="section-padding">

@@ -1,40 +1,40 @@
 import React, { useState } from 'react';
-import { FiExternalLink, FiGithub, FiFilter, FiEye } from 'react-icons/fi';
+import { FiGithub, FiFilter, FiEye } from 'react-icons/fi';
 
 export default function Projects() {
   const [filter,setFilter]=useState('all'),[hovered,setHovered]=useState(null);
   const data = [
-    {
-      id:1,
-      title:'TextUtils',
-      category:'frontend',
-      featured:true,
-      demo:'#',
-      code:'https://github.com/bhumika111/TextUtils',
-      desc:'React-based text utilities app with case conversion, counts, and TTS integration.',
-      tech:['React','Web Speech API','CSS3']
-    },
-    {
-      id:2,
-      title:'NewsMonkey',
-      category:'frontend',
-      featured:true,
-      demo:'#',
-      code:'https://github.com/bhumika111/NewsMonkey',
-      desc:'Real-time news app with category routing, lazy loading, and caching strategies.',
-      tech:['React','NewsAPI','Lazy Loading']
-    },
-    {
-      id:3,
-      title:'YourPlaces',
-      category:'fullstack',
-      featured:true,
-      demo:'#',
-      code:'https://github.com/bhumika111/yourPlaces',
-      desc:'Full-stack location management with Node.js/Express backend and responsive frontend.',
-      tech:['Node.js','Express','React']
-    }
-  ];
+     {
+    id: 1,
+    title: 'WhatsApp Email Server',
+    category: 'fullstack',
+    featured: true,
+    demo: '#',
+    code: 'https://github.com/bhumika111',
+    desc: 'Node.js server integrating IMAP email monitoring and Twilio messaging for real-time WhatsApp notifications.',
+    tech: ['Node.js', 'Twilio', 'IMAP', 'Express']
+  },
+  {
+    id: 2,
+    title: 'NewsMonkey',
+    category: 'frontend',
+    featured: true,
+    demo: '#',
+    code: 'https://github.com/bhumika111/NewsMonkey',
+    desc: 'Real-time news platform with category routing, pagination and reusable React components.',
+    tech: ['React', 'NewsAPI', 'Bootstrap']
+  },
+{
+ id: 3,
+    title: 'Sorting Visualizer',
+    category: 'frontend',
+    featured: true,
+    demo: '#',
+    code: 'https://github.com/bhumika111/sorting-visualizer',
+    desc: 'Interactive visualization of Bubble Sort, Merge Sort and Quick Sort with responsive animations.',
+    tech: ['JavaScript', 'HTML', 'CSS']
+  },
+];
   const cats=[{id:'all',name:'All'},{id:'frontend',name:'Frontend'},{id:'fullstack',name:'Full Stack'}];
   const filtered = filter==='all'?data:data.filter(d=>d.category===filter);
 

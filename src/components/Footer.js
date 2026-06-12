@@ -1,9 +1,9 @@
 import React from 'react';
-import { FiHeart, FiGithub, FiLinkedin, FiArrowUp } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiArrowUp } from 'react-icons/fi';
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const links = ['home','about','skills','projects','experience','contact'];
+  const links = ['home','about','projects','experience','contact'];
   const socials = [
     {icon:FiGithub,href:'https://github.com/bhumika111'},
     {icon:FiLinkedin,href:'https://www.linkedin.com/in/bhumika-ramawat-999b70274/'}
@@ -43,7 +43,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-gray-800 py-6">
         <div className="container-custom flex flex-col md:flex-row justify-between items-center text-sm">
-          <p>© {year} Bhumika Ramawat. Made with <FiHeart className="inline text-red-500"/> React & Tailwind CSS</p>
+          <p>© {year} Bhumika Ramawat.</p>
           <button onClick={()=>window.scrollTo({top:0,behavior:'smooth'})} className="flex items-center hover:text-primary-400 transition"><FiArrowUp className="mr-1"/>Back to Top</button>
         </div>
       </div>

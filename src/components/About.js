@@ -15,7 +15,7 @@ export default function About() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-6 animate-fadeInUp">About Me</h2>
           <p className="text-lg text-gray-600 ">
-            I’m a CSE student at JECRC University (2023–2027) with a CGPA of 8.24/10, specializing in full-stack development.
+            I’m a CSE student at JECRC University (2023–2027) with a CGPA of 7.7/10, specializing in full-stack development.
           </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -24,12 +24,12 @@ export default function About() {
           </div>
           <div className="space-y-6 animate-fadeInRight">
             <p className="text-gray-600 ">
-              As a passionate developer, I’ve built projects like TextUtils, NewsMonkey, and YourPlaces, leveraging modern web technologies to deliver performant, user-friendly applications.
+              As a passionate developer, I’ve built projects like Sorting-Visualizer, NewsMonkey, and WhatsApp-Email-Server, leveraging modern web technologies to deliver performant, user-friendly applications.
             </p>
             <div className="grid grid-cols-2 gap-4 text-sm mb-6">
               <div><strong>University:</strong> JECRC University</div>
               <div><strong>Degree:</strong> B.Tech CSE (2023–2027)</div>
-              <div><strong>CGPA:</strong> 8.24/10</div>
+              <div><strong>CGPA:</strong> 7.7/10</div>
               <div><strong>Freelance:</strong> Available</div>
             </div>
             <div className='pt-4'>

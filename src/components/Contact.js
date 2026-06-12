@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { FiMail, FiPhone, FiMapPin, FiLinkedin, FiGithub, FiSend, FiCheck, FiClock } from 'react-icons/fi';
 
 export default function Contact() {
@@ -14,14 +15,43 @@ export default function Contact() {
     {icon:FiLinkedin,url:'https://www.linkedin.com/in/bhumika-ramawat-999b70274/'}
   ];
   const handleChange=e=>setForm({...form,[e.target.name]:e.target.value});
-  const handleSubmit=e=>{
-    e.preventDefault();setStatus('sending');
-    setTimeout(()=>{
-      console.log(form);setStatus('sent');
-      setForm({name:'',email:'',subject:'',message:''});
-      setTimeout(()=>setStatus('idle'),5000);
-    },1500);
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setStatus('sending');
+
+  try {
+    await emailjs.send(
+      'service_r3eleka',
+      'template_aq1h0r1',
+      {
+        name: form.name,
+        email: form.email,
+        subject: form.subject,
+        message: form.message
+      },
+      'JPfwEz8b51FCOzJSn'
+    );
+
+    setStatus('sent');
+
+    setForm({
+      name: '',
+      email: '',
+      subject: '',
+      message: ''
+    });
+
+    setTimeout(() => setStatus('idle'), 5000);
+
+  } catch (error) {
+  console.log("FULL ERROR:", error);
+  console.log("STATUS:", error.status);
+  console.log("TEXT:", error.text);
+
+  alert(`Error: ${error.text}`);
+  setStatus('idle');
+}
+};
   const getIcon=()=> status==='sending'?<FiClock className="animate-spin"/>: status==='sent'?<FiCheck/>:<FiSend/>;
   const getText={'idle':'Send Message','sending':'Sending...','sent':'Message Sent!'}[status];
 
