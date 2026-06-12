@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Add these responsive fixes */
+.container-custom {
+  @apply mx-auto px-4 max-w-7xl;
+}
+
+@media (max-width: 640px) {
+  .container-custom {
+    @apply px-3;
+  }
+  
+  section {
+    @apply px-3;
+  }
+}
+
+/* Ensure text doesn't overflow on mobile */
+.text-center {
+  @apply w-full;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply break-words;
+}
+
 body {
   @apply bg-white text-gray-900 font-sans;
   scroll-behavior: smooth;

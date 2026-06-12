@@ -18,7 +18,7 @@ export default function About() {
             I’m a CSE student at JECRC University (2023–2027) with a CGPA of 7.7/10, specializing in full-stack development.
           </p>
         </div>
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center px-3 sm:px-0">
           <div className="animate-fadeInLeft">
             <img src="/profile.jpg" alt="Bhumika Ramawat" className="rounded-2xl shadow-lg mx-auto w-full max-w-sm"/>
           </div>

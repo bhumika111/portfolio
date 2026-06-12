@@ -9,7 +9,6 @@ export default function Projects() {
     title: 'WhatsApp Email Server',
     category: 'fullstack',
     featured: true,
-    demo: '#',
     code: 'https://github.com/bhumika111',
     desc: 'Node.js server integrating IMAP email monitoring and Twilio messaging for real-time WhatsApp notifications.',
     tech: ['Node.js', 'Twilio', 'IMAP', 'Express']
@@ -19,7 +18,6 @@ export default function Projects() {
     title: 'NewsMonkey',
     category: 'frontend',
     featured: true,
-    demo: '#',
     code: 'https://github.com/bhumika111/NewsMonkey',
     desc: 'Real-time news platform with category routing, pagination and reusable React components.',
     tech: ['React', 'NewsAPI', 'Bootstrap']
@@ -29,7 +27,6 @@ export default function Projects() {
     title: 'Sorting Visualizer',
     category: 'frontend',
     featured: true,
-    demo: '#',
     code: 'https://github.com/bhumika111/sorting-visualizer',
     desc: 'Interactive visualization of Bubble Sort, Merge Sort and Quick Sort with responsive animations.',
     tech: ['JavaScript', 'HTML', 'CSS']
@@ -62,7 +59,7 @@ export default function Projects() {
                   <FiEye className="text-white opacity-50 w-16 h-16"/>
                 </div>
                 <div className={`absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity ${hovered===p.id?'opacity-100':'opacity-0'}`}>
-                  <a href={p.demo} className="p-3 bg-white/20 rounded-full mx-2"><FiEye className="text-white"/></a>
+                 
                   <a href={p.code} className="p-3 bg-white/20 rounded-full mx-2"><FiGithub className="text-white"/></a>
                 </div>
               </div>
@@ -73,7 +70,7 @@ export default function Projects() {
                   {p.tech.map((t,i)=><span key={i} className="px-2 py-1 bg-primary-100 ">{t}</span>)}
                 </div>
                 <div className="flex justify-between">
-                  <a href={p.demo} className="text-primary-600 hover:underline flex items-center"><FiEye className="mr-1"/> Demo</a>
+                 
                   <a href={p.code} className="text-gray-600 hover:underline flex items-center"><FiGithub className="mr-1"/> Code</a>
                 </div>
               </div>

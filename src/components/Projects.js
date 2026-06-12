@@ -7,13 +7,12 @@ export default function Projects() {
   const [filter, setFilter] = useState('all');
   const [hovered, setHovered] = useState(null);
 
-  const data = [
+const data = [
   {
     id: 1,
     title: "WhatsApp Email Server",
     category: "fullstack",
-    demo: "#",
-    code: "https://github.com/bhumika111",
+    code: "https://github.com/bhumika111/WhatsApp-Email-Server", 
     desc: "Built a Node.js server integrating IMAP email monitoring and Twilio messaging for real-time WhatsApp notifications.",
     tech: ["Node.js", "Twilio", "IMAP", "Express"]
   },
@@ -22,8 +21,7 @@ export default function Projects() {
     id: 2,
     title: "NewsMonkey",
     category: "frontend",
-    demo: "#",
-    code: "https://github.com/bhumika111",
+    code: "https://github.com/bhumika111/NewsMonkey",  
     desc: "Real-time news platform with category-based navigation, pagination and reusable React components.",
     tech: ["React", "News API", "Bootstrap"]
   },
@@ -32,8 +30,7 @@ export default function Projects() {
     id: 3,
     title: "Sorting Visualizer",
     category: "frontend",
-    demo: "#",
-    code: "https://github.com/bhumika111/sorting-visualizer",
+    code: "https://github.com/bhumika111/sorting-visualizer",  
     desc: "Interactive visualization of Bubble Sort, Merge Sort and Quick Sort using responsive animations.",
     tech: ["JavaScript", "HTML", "CSS"]
   },
@@ -42,20 +39,18 @@ export default function Projects() {
     id: 4,
     title: "TextUtils",
     category: "frontend",
-    demo: "#",
-    code: "https://github.com/bhumika111",
+    code: "https://github.com/bhumika111/TextUtils",  
     desc: "Text utility application providing text analysis, transformation and formatting features.",
     tech: ["React", "JavaScript", "Bootstrap"]
   },
   {
-  id: 5,
-  title: "YourPlaces",
-  category: "fullstack",
-  demo: "#",
-  code: "https://github.com/bhumika111",
-  desc: "Full-stack location sharing platform with authentication, image uploads and MongoDB integration.",
-  tech: ["React", "Node.js", "MongoDB", "Express"]
-}
+    id: 5,
+    title: "YourPlaces",
+    category: "fullstack",
+    code: "https://github.com/bhumika111/YourPlaces",  
+    desc: "Full-stack location sharing platform with authentication, image uploads and MongoDB integration.",
+    tech: ["React", "Node.js", "MongoDB", "Express"]
+  }
 ];
 
   const categories = [
@@ -114,9 +109,7 @@ export default function Projects() {
                     hovered === proj.id ? 'opacity-100' : 'opacity-0'
                   }`}
                 >
-                  <a href={proj.demo} className="p-3 bg-white/20 rounded-full mx-2">
-                    <FiEye className="text-white" />
-                  </a>
+                
                   <a href={proj.code} className="p-3 bg-white/20 rounded-full mx-2">
                     <FiGithub className="text-white" />
                   </a>
@@ -136,10 +129,7 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex justify-between">
-                  <a href={proj.demo} className="text-primary-600 hover:underline flex items-center">
-                    <FiEye className="mr-1" />
-                    Demo
-                  </a>
+                  
                   <a href={proj.code} className="text-gray-600 hover:underline flex items-center">
                     <FiGithub className="mr-1" />
                     Code

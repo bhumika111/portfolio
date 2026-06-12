@@ -20,13 +20,18 @@ export default function Hero() {
   },[text,idx,del]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden px-3 sm:px-0">
       <div className="absolute inset-0 bg-gradient-to-br from-primary-50 via-white to-purple-50 d"></div>
       <div className="container-custom relative z-10 text-center animate-fadeInUp">
         <div className="mb-8">
-       <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-600 p-1 flex items-center justify-center">
-  <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center">
-    <span className="text-4xl font-bold text-gray-600">BR</span>
+       {/* Add your image */}
+<div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-purple-600 p-1 flex items-center justify-center">
+  <div className="w-full h-full rounded-full overflow-hidden">
+    <img 
+      src="/profile.jpg" 
+      alt="Bhumika Ramawat" 
+      className="w-full h-full object-cover"
+    />
   </div>
 </div>
 
