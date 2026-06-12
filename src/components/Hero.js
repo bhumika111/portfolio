@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import { FiDownload, FiGithub, FiLinkedin, FiMail, FiArrowDown } from 'react-icons/fi';
 
 export default function Hero() {
-  const roles = ['Full-Stack Developer','CSE Student','Problem Solver'];
   const [text,setText] = useState(''),[idx,setIdx]=useState(0),[del,setDel]=useState(false);
 
   useEffect(()=>{
+    const roles = ['Full-Stack Developer','CSE Student','Problem Solver'];
     const handle = setTimeout(()=>{
       const role = roles[idx];
       if (del) {

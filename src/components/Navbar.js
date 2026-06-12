@@ -13,7 +13,12 @@ export default function Navbar({ activeSection }) {
   return (
     <nav className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur border-b">
       <div className="container-custom flex justify-between items-center h-16">
-        <a onClick={()=>scrollTo('home')} className="text-2xl font-bold gradient-text cursor-pointer">Bhumika Ramawat</a>
+        <button
+  onClick={() => scrollTo('home')}
+  className="text-2xl font-bold gradient-text cursor-pointer"
+>
+  Bhumika Ramawat
+</button>
         <div className="hidden md:flex space-x-6">
           {items.map(id=>(
             <button key={id} onClick={()=>scrollTo(id)}
