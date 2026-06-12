@@ -35,7 +35,6 @@ function App() {
       <main>
         <Hero/>
         <About/>
-        <Skills/>
         <Projects/>
         <Experience/>
         <Contact/>
