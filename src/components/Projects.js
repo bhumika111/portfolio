@@ -63,7 +63,7 @@ const data = [
     : data.filter((item) => item.category === filter);
 
   return (
-    <section id="projects" className="section-padding bg-gray-50 ">
+    <section id="projects" className="pt-16 section-padding bg-gray-50 ">
       <div className="container-custom">
         {/* Heading */}
         <div className="text-center mb-16">
