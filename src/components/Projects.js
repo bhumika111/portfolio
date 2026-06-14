@@ -1,11 +1,10 @@
 // src/components/Projects.js
 
 import React, { useState } from 'react';
-import { FiFilter, FiEye, FiGithub } from 'react-icons/fi';
+import { FiFilter, FiGithub } from 'react-icons/fi';
 
 export default function Projects() {
   const [filter, setFilter] = useState('all');
-  const [hovered, setHovered] = useState(null);
 
 const data = [
   {
@@ -97,24 +96,7 @@ const data = [
               key={proj.id}
               className="card overflow-hidden animate-fadeInUp"
               style={{ animationDelay: `${idx * 0.1}s` }}
-              onMouseEnter={() => setHovered(proj.id)}
-              onMouseLeave={() => setHovered(null)}
             >
-              <div className="relative">
-                <div className="w-full h-48 bg-gradient-to-br from-primary-500 to-purple-600 flex items-center justify-center">
-                  <FiEye className="text-white opacity-50 w-16 h-16" />
-                </div>
-                <div
-                  className={`absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center transition-opacity ${
-                    hovered === proj.id ? 'opacity-100' : 'opacity-0'
-                  }`}
-                >
-                
-                  <a href={proj.code} className="p-3 bg-white/20 rounded-full mx-2">
-                    <FiGithub className="text-white" />
-                  </a>
-                </div>
-              </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
                 <p className="text-gray-600 ">{proj.desc}</p>
